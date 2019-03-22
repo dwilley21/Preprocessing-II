@@ -5,12 +5,25 @@
     justify-content: space-between;
     margin: 12px; 
     border-bottom: 2px dashed silver;
+    @media @max500{
+     flex-flow: row wrap;      
+    }
+    
     nav{
         margin-bottom: 12px; 
+        @media @max500{
+            display: flex;
+            width: 100%; 
+            justify-content: center;
+            margin-bottom: 0px;      
+           } 
     }
     h2{
         margin-right: 36px; 
-        font-weight: bold; 
+        font-weight: bold;
+        @media @max500{
+        margin: 0% auto;   
+        } 
     }
     a{
         text-decoration: none;
